@@ -1,6 +1,6 @@
 <template>
   <form @submit.prevent="$emit('add-todo')" class="todo-form">
-    <input ref="inputEl" v-model="inputValue" @input="$emit('update:new-todo', inputValue)" type="text" placeholder="Catet dulu sebelum lupa" class="todo-input" />
+    <input ref="inputEl" v-model="inputValue" @input="$emit('update:new-todo', inputValue)" type="text" placeholder="Catet dulu sebelum lupa:)" class="todo-input" />
     <button
       type="submit"
       :disabled="!inputValue.trim()"
